@@ -1,0 +1,56 @@
+
+.task-card {
+    border: 2px solid #000000;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.task-card.overdue {
+    border: 2px solid  red;
+    background-color: white;
+    color: black;
+}
+.task-card.completed {
+    background-color: white;
+    color: black;
+}
+*
+{
+    margin: 5px;
+    padding: 0%;
+}
+#heading1
+{
+   text-align: center;
+}
+#add-section
+{
+
+    margin: 10px;
+    padding:10px;
+
+}
+#item-name
+{
+    margin: 10px;
+    padding: 10px;
+}
+#item-date
+{
+    margin: 10px;
+    padding: 10px 20px;
+}
+#item-priority
+{
+    margin: 10px;
+    padding: 10px 50px 10px 30px;
+}
+#add-button
+{
+    margin: 5px;
+    padding: 10px 50px;
+    color: white;
+    background-color: black;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="heading1">To - Do List</h1>
+  <div id="add-section">
+    <form>
+        <input type="text" id="item-name" placeholder="Item name" size="70">
+        <input type="date" id="item-date" >
+        <select id="item-priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <button id="add-button">Add Item</button>
+    </form>
+</div>
+
+<div id="today-section">
+    <h2>Today's Tasks</h2>
+    <div id="today-tasks"></div>
+</div>
+
+<div id="future-section">
+    <h2>Future Tasks</h2>
+    <div id="future-tasks"></div>
+</div>
+
+<div id="completed-section">
+    <h2>Completed Tasks</h2>
+    <div id="completed-tasks"></div>
+</div>
+
+<template id="task-template">
+    <div class="task-card">
+        <p class="task-name"></p>
+        <p class="task-date"></p>
+        <p class="task-priority"></p>
+        <div class="task-buttons">
+            <button class="delete-button">Delete</button>
+            <button class="complete-button">Complete</button>
+        </div>
+    </div>
+</template>
+
+</body>
+<script src="script.js"></script>
+</html>
